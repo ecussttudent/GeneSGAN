@@ -24,7 +24,7 @@ setuptools.setup(
         'torch==1.10.2',
         'scikit-learn>=0.24.2',
         'scipy>=1.8.0',
-        'pandas>=1.4.2',
+        'pandas==1.4.2',
         'rpy2==3.5.1'
     ]
 )
