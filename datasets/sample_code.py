@@ -1,9 +1,11 @@
 import pandas as pd
-from GeneSGAN.Gene_SGAN_clustering import cross_validated_clustering
 import os
+os.environ['R_HOME'] = r"C:\Program Files\R\R-4.5.1"
+os.environ['PATH'] = r"C:\Program Files\R\R-4.5.1\bin\x64;" + os.environ.get('PATH', '')
+from GeneSGAN.Gene_SGAN_clustering import cross_validated_clustering
 
 if __name__ == '__main__':
-	output_dir = './genesgan'
+	output_dir = './output'
 	if not os.path.exists(output_dir):
 		os.makedirs(output_dir)
 
